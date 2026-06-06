@@ -12,6 +12,7 @@ from .corrections import (
     holm_bonferroni,
 )
 from .experiment import Experiment, ExperimentResult
+from .sequential import SPRTResult, always_valid_pvalue, sprt
 from .power import (
     experiment_runtime_days,
     minimum_detectable_effect,
@@ -33,4 +34,7 @@ __all__ = [
     "holm_bonferroni",
     "benjamini_hochberg",
     "CorrectionResult",
+    "sprt",
+    "always_valid_pvalue",
+    "SPRTResult",
 ]
