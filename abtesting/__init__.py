@@ -5,6 +5,12 @@ testing, power and sample-size planning, multiple-comparison corrections,
 sequential testing with valid early stopping, and visualization.
 """
 
+from .corrections import (
+    CorrectionResult,
+    benjamini_hochberg,
+    bonferroni,
+    holm_bonferroni,
+)
 from .experiment import Experiment, ExperimentResult
 from .power import (
     experiment_runtime_days,
@@ -23,4 +29,8 @@ __all__ = [
     "minimum_detectable_effect",
     "observed_power",
     "experiment_runtime_days",
+    "bonferroni",
+    "holm_bonferroni",
+    "benjamini_hochberg",
+    "CorrectionResult",
 ]
