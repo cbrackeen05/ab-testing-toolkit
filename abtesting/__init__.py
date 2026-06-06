@@ -19,6 +19,13 @@ from .power import (
     minimum_sample_size,
     observed_power,
 )
+from .visualizations import (
+    plot_confidence_interval,
+    plot_distributions,
+    plot_power_curve,
+    plot_pvalue_distribution,
+    plot_sequential_boundaries,
+)
 
 __version__ = "0.1.0"
 
@@ -37,4 +44,9 @@ __all__ = [
     "sprt",
     "always_valid_pvalue",
     "SPRTResult",
+    "plot_distributions",
+    "plot_confidence_interval",
+    "plot_power_curve",
+    "plot_pvalue_distribution",
+    "plot_sequential_boundaries",
 ]
