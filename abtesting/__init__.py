@@ -5,6 +5,12 @@ testing, power and sample-size planning, multiple-comparison corrections,
 sequential testing with valid early stopping, and visualization.
 """
 
+from .experiment import Experiment, ExperimentResult
+
 __version__ = "0.1.0"
 
-__all__ = ["__version__"]
+__all__ = [
+    "__version__",
+    "Experiment",
+    "ExperimentResult",
+]
